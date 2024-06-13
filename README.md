@@ -12,3 +12,14 @@ Potential external effects that can influence the measurements include
  - The operating system scheduler
  - Background processes
  - System thermals and the resulting boost or throttling
+
+In order to minimize these effects of these uncontrollable variables 5 runs of each version will be done.
+
+<h1>Results</h1>
+The raw data gathered can be found in the Data.xlsx sheet.
+
+<h1>Analysis</h1>
+Due to the rather unstable and outlying values found in the first ten frames are not considered for further analysis.
+
+Averages
+Number of spikes per run (average * 1.1 or greater)
