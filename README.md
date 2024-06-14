@@ -27,7 +27,7 @@ Number of spikes per run (average * 1.25 or greater)
 
 The software used for these calculations can be found [here](https://github.com/KronosTheTitan/AdvancedToolsAnalysis).
 
-The results from these calculations indicated the following value
+The results from these calculations indicated the following values
 
 Static results:
  - Average Number of peaks: 740,8
@@ -38,6 +38,8 @@ Non Static results:
 - Average Number of peaks: 713,8
 - Average Frames between peaks: 2,4880919024936956
 - Average Milliseconds per frame: 7,3167329101599705
+
+![Static Average Chart](Charts/static.png)
 
 <h1>Conclusion</h1>
 based on the data gathered it is currently not possible to say there is a great difference between the two, though it would be worth investigating potential differences with different workloads.
