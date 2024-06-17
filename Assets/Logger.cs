@@ -7,6 +7,7 @@ internal struct Measurement
 {
     public int frame;
     public float frameTimeInMilliSeconds;
+    public int collisionsDuringFrame;
 }
 
 public class Logger : MonoBehaviour
@@ -15,6 +16,7 @@ public class Logger : MonoBehaviour
     [SerializeField] private Slider progressBar;
     private List<Measurement> _measurements;
     private int _frame;
+    private int _collisions;
     
     private void Start()
     {
@@ -35,9 +37,11 @@ public class Logger : MonoBehaviour
         */
         measurement.frame = _frame;
         measurement.frameTimeInMilliSeconds = Time.deltaTime * 1000;
+        measurement.collisionsDuringFrame = _collisions;
         
         _frame++;
-
+        _collisions = 0;
+        
         progressBar.value = _frame;
         
         _measurements.Add(measurement);
@@ -53,10 +57,15 @@ public class Logger : MonoBehaviour
 
         foreach (Measurement measurement in _measurements)
         {
-            string line = measurement.frame + "," + measurement.frameTimeInMilliSeconds;
+            string line = measurement.frame + "," + measurement.frameTimeInMilliSeconds + "," + measurement.collisionsDuringFrame;
             lines.Add(line);
         }
         
         File.WriteAllLines("F:/03 School/results.csv",lines);
+    }
+
+    public void AddCollision()
+    {
+        _collisions++;
     }
 }
