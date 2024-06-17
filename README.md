@@ -70,3 +70,11 @@ y-axis = collisions per frame
 
 <h1>Conclusion</h1>
 The hypothesis was accurate, there is next to no correlation between the collisions and frame times.
+
+<h1>Hour Registration</h1>
+Writing prototype for test 1 - 4 hours
+Writing analysis tool for test 1 - 16 hours
+Analyzing the data and verifying that I didn't make math errors in my code (I did do that a couple of times it turns out) - 16 hours
+Making the charts (getting the charts to readable wasn't easy) - 4 hours
+Second test prototype - 1 hour
+Second test analysis - 5 hours
