@@ -11,8 +11,8 @@ What difference can be found between the usage of a floor marked static when com
 Due to the large number of collisions the impact will be relatively limited with the initial prototype that sparked this being nothing more than background task interference.
 
 <h1>Methodology</h1>
-The test will consist of individual measurements of 2500 frames in which 10000 in a 100 x 100 square grid are continuously bouncing with a bounciness value of 0.5.
-The variables measured will be the frame time in milliseconds (Time.DeltaTime * 1000) and whether the floor is marked as static.<br>
+The test will consist of individual measurements of 2500 frames in which 10000 in a 100 x 100 square grid are continuously bouncing with a bounciness value of 0.5 on a floor that is either marked as static or as non-static.
+The variables measured will be the frame time in milliseconds (Time.DeltaTime * 1000)<br>
 
 Potential external effects that can influence the measurements include
  - The operating system scheduler
@@ -74,6 +74,9 @@ y-axis = collisions per frame
 
 <h1>Conclusion</h1>
 The hypothesis was accurate, there is next to no correlation between the collisions and frame times.
+
+<h1>Discussion</h1>
+So as a part of this I looked into the functioning of the static flag, while there are a number of mentions of the physics system being affected by the static flag. But after this experiment I am inclined towards the position that this is inaccurate. The most likely reason for this misconception is that the term static collider actually refers to a game object with a collider but without a rigid body. Now there are some claims floating around that it will segment up collision checks against static objects to limit how many checks need to be made, I was not able to verify this though. 
 
 <h1>Hour Registration</h1>
 
