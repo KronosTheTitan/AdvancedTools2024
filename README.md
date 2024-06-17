@@ -1,7 +1,5 @@
 ﻿<h1>Introduction</h1>
-When looking into something to research for this class I decided to make a quick prototype to see if there was anything worth investigating, the chart produced from that is the following
-
-![Initial Question](Charts/Initial.png)
+When looking into something to research for this class I decided to make a quick prototype to see if there was anything worth investigating.
 
 <h1>Research Question</h1>
 What difference can be found between the usage of a floor marked static when compared to a floor that isn't marked as static in a scenario with a large number of rigid bodies with simultaneous collisions.
@@ -43,7 +41,9 @@ Non-Static results:
  - Average Frames between peaks: 24,68487394957983
  - Average Milliseconds per frame: 7,3167329101599705
 
-![Static Average Chart](Charts/static.png)
+The chart seen below is a small section of the data set created, specifically frames 10 to 109 of runs static 5 and non-static 1. This snapshot is not entirely representative of the chart as a whole, a chart that would have actually contained all the data would have been nearly unreadable. As a demonstration of that fact another chart has been included under Charts/static.png that depicts the average times per frame. It is so large that gaining useful information from it is nearly impossible. 
+
+![Initial Question](Charts/Initial.png)
 
 <h1>Conclusion</h1>
 based on the data gathered it is currently reasonable to say there is a difference between the two option even at this significant workload. The static version on average had fewer peaks and had more time between the peaks, though not much of a difference in average frame times.
