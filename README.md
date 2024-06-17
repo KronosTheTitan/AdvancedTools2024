@@ -1,6 +1,9 @@
 ﻿<h1>Introduction</h1>
 This repository was for a college assignment where I had to investigate something related to a digital technology. I ended up stumbling on a scenario where unity would occasionally have a large performance drop that seemed to be related to the physics system. As such I decided to investigate a further to see how significant this effect was.
 
+<h1>Justification</h1>
+Unity is used in a lot of places, usually with its default physics system, so to me, it seemed like a very useful thing to investigate if there might be some edge cases in which the conventional wisdom breaks down.
+
 <h1>Research Question</h1>
 What difference can be found between the usage of a floor marked static when compared to a floor that isn't marked as static in a scenario with a large number of rigid bodies with simultaneous collisions.
 
@@ -36,6 +39,7 @@ Static results:
  - Average Number of peaks: 72,4
  - Average Frames between peaks: 33,01657458563536
  - Average Milliseconds per frame: 7,370921610959978
+
 Non-Static results:
  - Average Number of peaks: 95,2
  - Average Frames between peaks: 24,68487394957983
