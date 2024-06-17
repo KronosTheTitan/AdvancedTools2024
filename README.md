@@ -1,5 +1,5 @@
 ﻿<h1>Introduction</h1>
-When looking into something to research for this class I decided to make a quick prototype to see if there was anything worth investigating.
+This repository was for a college assignment where I had to investigate something related to a digital technology. I ended up stumbling on a scenario where unity would occasionally have a large performance drop that seemed to be related to the physics system. As such I decided to investigate a further to see how significant this effect was.
 
 <h1>Research Question</h1>
 What difference can be found between the usage of a floor marked static when compared to a floor that isn't marked as static in a scenario with a large number of rigid bodies with simultaneous collisions.
